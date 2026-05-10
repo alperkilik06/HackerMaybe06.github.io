@@ -4,7 +4,24 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Hakkımda | ALPER OSMAN KILIK</title>
-	<meta name="description" content="ALPER OSMAN KILIK hakkında analitik, disiplinli ve milli teknoloji odaklı profil." />
+	<meta name="description" content="ALPER OSMAN KILIK hakkında - Analitik, disiplinli ve üretken bir yazılım mühendisi." />
+	
+	<!-- Open Graph -->
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Hakkımda | ALPER OSMAN KILIK" />
+	<meta property="og:description" content="Analitik, disiplinli ve üretken yazılım mühendisi. Sensör füzyonu, termal görüntü işleme, yapay zekâ." />
+	
+	<!-- Twitter Card -->
+	<meta property="twitter:card" content="summary_large_image" />
+	<meta property="twitter:title" content="Hakkımda | ALPER OSMAN KILIK" />
+	<meta property="twitter:description" content="Yazılım mühendisi, savunma teknolojileri uzmanı" />
+
+	<!-- Favicon -->
+	<link rel="icon" type="image/svg+xml" href="favicon.svg" />
+	<link rel="alternate icon" href="favicon.svg" />
+
+	<link rel="dns-prefetch" href="https://cdn.tailwindcss.com" />
+	<link rel="preload" href="styles.css" as="style" />
 	<script src="https://cdn.tailwindcss.com"></script>
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,31 +29,54 @@
 	<link rel="stylesheet" href="styles.css" />
 </head>
 <body class="antialiased">
+	<!-- Mobile Navigation -->
+	<div class="mobile-nav">
+		<a href="index.html">Ana Sayfa</a>
+		<a href="hakkimda.html" class="active">Hakkımda</a>
+		<a href="projeler.html">Projeler</a>
+		<a href="iletisim.html">İletişim</a>
+		<div class="lang-switch" aria-label="Dil secimi">
+			<a href="hakkimda.html" class="lang-link lang-link-active">TR</a>
+			<a href="hakkimda-en.html" class="lang-link">EN</a>
+		</div>
+	</div>
+
 	<main class="page-shell">
-		<header class="mx-auto flex max-w-7xl items-center justify-between px-6 py-8 lg:px-10">
+		<header class="mx-auto flex max-w-7xl flex-col gap-3 items-start sm:items-center sm:justify-between px-4 sm:px-6 py-6 lg:px-10 lg:py-8">
 			<div>
-				<p class="text-xs font-semibold uppercase tracking-[0.4em] text-[#cc0000]">Portföy</p>
-				<p class="mt-2 text-sm text-soft">Hakkımda</p>
+				<p class="text-xs font-semibold uppercase tracking-[0.35em] sm:tracking-[0.4em] text-[#cc0000]">Portföy</p>
+				<p class="mt-1 sm:mt-2 text-xs sm:text-sm text-soft">Hakkımda</p>
 			</div>
-			<nav class="flex flex-wrap items-center justify-end gap-2 text-sm font-medium">
-				<a href="index.html" class="nav-link">Ana Sayfa</a>
-				<a href="hakkimda.html" class="nav-link nav-link-active">Hakkımda</a>
-				<a href="projeler.html" class="nav-link">Projeler</a>
-				<a href="iletisim.html" class="nav-link">İletişim</a>
-			</nav>
+			<div class="flex items-center justify-between gap-4 w-full sm:w-auto">
+				<nav class="hidden sm:flex flex-wrap items-center justify-end gap-2 text-xs sm:text-sm font-medium">
+					<a href="index.html" class="nav-link">Ana Sayfa</a>
+					<a href="hakkimda.html" class="nav-link nav-link-active">Hakkımda</a>
+					<a href="projeler.html" class="nav-link">Projeler</a>
+					<a href="iletisim.html" class="nav-link">İletişim</a>
+				</nav>
+				<div class="hidden sm:flex lang-switch" aria-label="Dil secimi">
+					<a href="hakkimda.html" class="lang-link lang-link-active">TR</a>
+					<a href="hakkimda-en.html" class="lang-link">EN</a>
+				</div>
+				<div class="hamburger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
 		</header>
 
-		<section class="page-section pb-20 pt-10 lg:pt-16">
-			<div class="grid gap-10 lg:grid-cols-[0.9fr_1.1fr]">
-				<div class="page-card p-8">
-					<p class="text-xs font-semibold uppercase tracking-[0.45em] text-[#cc0000]">Hakkımda</p>
-					<h1 class="mt-4 text-4xl font-extrabold uppercase tracking-[0.08em] text-white sm:text-5xl">Analitik, disiplinli ve üretken</h1>
-					<div class="mt-8 rounded-2xl border border-white/10 bg-black/40 p-5">
-						<p class="text-sm uppercase tracking-[0.35em] text-soft">Odak</p>
-						<p class="mt-3 text-lg font-semibold text-white">Yazılım, yapay zekâ ve savunma teknolojileri</p>
+		<section class="page-section pb-16 sm:pb-20 pt-8 sm:pt-10 lg:pt-16 cv-auto">
+			<div class="grid gap-6 sm:gap-10 lg:grid-cols-[0.9fr_1.1fr]">
+				<div class="page-card p-4 sm:p-8">
+					<p class="text-xs font-semibold uppercase tracking-[0.3em] sm:tracking-[0.45em] text-[#cc0000]">Hakkımda</p>
+					<h1 class="mt-3 sm:mt-4 text-2xl sm:text-4xl font-extrabold uppercase tracking-[0.06em] sm:tracking-[0.08em] text-white md:text-5xl">Analitik, disiplinli ve üretken</h1>
+					<div class="mt-6 sm:mt-8 rounded-2xl border border-white/10 bg-black/40 p-4 sm:p-5">
+						<p class="text-xs uppercase tracking-[0.25em] sm:tracking-[0.35em] text-soft">Odak</p>
+						<p class="mt-2 sm:mt-3 text-sm sm:text-lg font-semibold text-white">Yazılım, yapay zekâ ve savunma teknolojileri</p>
 					</div>
 				</div>
-				<div class="space-y-6 text-base leading-8 text-soft">
+				<div class="space-y-4 sm:space-y-6 text-sm sm:text-base leading-6 sm:leading-8 text-soft">
 					<p>
 						Yazılım alanında kendini geliştirmiş, yenilikçi çözümler üretmeye odaklı bir adayım. Yapay zekâ teknolojilerini etkin şekilde kullanarak
 						projelerimde verimliliği artırmayı önemsiyorum. Takım çalışmalarına kolayca uyum sağlayarak farklı bakış açılarını birleştirebiliyorum.
@@ -61,12 +101,14 @@
 			</div>
 		</section>
 
-		<footer class="border-t border-white/10 py-8">
-			<div class="mx-auto flex max-w-7xl flex-col gap-3 px-6 text-sm text-soft lg:flex-row lg:items-center lg:justify-between lg:px-10">
+		<footer class="border-t border-white/10 py-6 sm:py-8">
+			<div class="mx-auto flex max-w-7xl flex-col gap-2 sm:gap-3 px-4 sm:px-6 text-xs sm:text-sm text-soft lg:flex-row lg:items-center lg:justify-between lg:px-10">
 				<p>ALPER OSMAN KILIK</p>
-				<p class="uppercase tracking-[0.25em] text-white/70">Black. Red. Authority.</p>
+				<p class="uppercase tracking-[0.2em] sm:tracking-[0.25em] text-white/70">Black. Red. Authority.</p>
 			</div>
 		</footer>
 	</main>
+
+	<script src="script.js" defer></script>
 </body>
 </html>

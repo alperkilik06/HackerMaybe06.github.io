@@ -4,7 +4,24 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Projeler | ALPER OSMAN KILIK</title>
-	<meta name="description" content="ALPER OSMAN KILIK için seçilmiş projeler ve savunma teknolojisi odaklı çalışmalar." />
+	<meta name="description" content="ALPER OSMAN KILIK projeleri - İHA Sistemi, Yapay Zekâ, Termal İşleme, Mesajlaşma Altyapısı ve daha fazlası." />
+	
+	<!-- Open Graph -->
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Projeler | ALPER OSMAN KILIK" />
+	<meta property="og:description" content="Seçilmiş projeler: İHA, Yapay Zekâ, Termal Görüntü İşleme, Real-time Chat ve daha fazlası." />
+	
+	<!-- Twitter Card -->
+	<meta property="twitter:card" content="summary_large_image" />
+	<meta property="twitter:title" content="Projeler | ALPER OSMAN KILIK" />
+	<meta property="twitter:description" content="Yazılım ve Savunma Teknolojileri Projeleri" />
+
+	<!-- Favicon -->
+	<link rel="icon" type="image/svg+xml" href="favicon.svg" />
+	<link rel="alternate icon" href="favicon.svg" />
+
+	<link rel="dns-prefetch" href="https://cdn.tailwindcss.com" />
+	<link rel="preload" href="styles.css" as="style" />
 	<script src="https://cdn.tailwindcss.com"></script>
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,92 +29,117 @@
 	<link rel="stylesheet" href="styles.css" />
 </head>
 <body class="antialiased">
+	<!-- Mobile Navigation -->
+	<div class="mobile-nav">
+		<a href="index.html">Ana Sayfa</a>
+		<a href="hakkimda.html">Hakkımda</a>
+		<a href="projeler.html" class="active">Projeler</a>
+		<a href="iletisim.html">İletişim</a>
+		<div class="lang-switch" aria-label="Dil secimi">
+			<a href="projeler.html" class="lang-link lang-link-active">TR</a>
+			<a href="projeler-en.html" class="lang-link">EN</a>
+		</div>
+	</div>
+
 	<main class="page-shell">
-		<header class="mx-auto flex max-w-7xl items-center justify-between px-6 py-8 lg:px-10">
+		<header class="mx-auto flex max-w-7xl flex-col gap-3 items-start sm:items-center sm:justify-between px-4 sm:px-6 py-6 lg:px-10 lg:py-8">
 			<div>
-				<p class="text-xs font-semibold uppercase tracking-[0.4em] text-[#cc0000]">Portföy</p>
-				<p class="mt-2 text-sm text-soft">Projeler</p>
+				<p class="text-xs font-semibold uppercase tracking-[0.35em] sm:tracking-[0.4em] text-[#cc0000]">Portföy</p>
+				<p class="mt-1 sm:mt-2 text-xs sm:text-sm text-soft">Projeler</p>
 			</div>
-			<nav class="flex flex-wrap items-center justify-end gap-2 text-sm font-medium">
-				<a href="index.html" class="nav-link">Ana Sayfa</a>
-				<a href="hakkimda.html" class="nav-link">Hakkımda</a>
-				<a href="projeler.html" class="nav-link nav-link-active">Projeler</a>
-				<a href="iletisim.html" class="nav-link">İletişim</a>
-			</nav>
+			<div class="flex items-center justify-between gap-4 w-full sm:w-auto">
+				<nav class="hidden sm:flex flex-wrap items-center justify-end gap-2 text-xs sm:text-sm font-medium">
+					<a href="index.html" class="nav-link">Ana Sayfa</a>
+					<a href="hakkimda.html" class="nav-link">Hakkımda</a>
+					<a href="projeler.html" class="nav-link nav-link-active">Projeler</a>
+					<a href="iletisim.html" class="nav-link">İletişim</a>
+				</nav>
+				<div class="hidden sm:flex lang-switch" aria-label="Dil secimi">
+					<a href="projeler.html" class="lang-link lang-link-active">TR</a>
+					<a href="projeler-en.html" class="lang-link">EN</a>
+				</div>
+				<div class="hamburger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
 		</header>
 
-		<section class="page-section pb-20 pt-10 lg:pt-16">
-			<div class="flex items-end justify-between gap-6 border-b border-white/10 pb-6">
+		<section class="page-section pb-16 sm:pb-20 pt-8 sm:pt-10 lg:pt-16 cv-auto">
+			<div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 sm:gap-6 border-b border-white/10 pb-4 sm:pb-6">
 				<div>
-					<p class="text-xs font-semibold uppercase tracking-[0.45em] text-[#cc0000]">Projeler</p>
-					<h1 class="mt-3 text-4xl font-extrabold uppercase tracking-[0.08em] text-white sm:text-5xl">Seçilmiş çalışmalar</h1>
+					<p class="text-xs font-semibold uppercase tracking-[0.3em] sm:tracking-[0.45em] text-[#cc0000]">Projeler</p>
+					<h1 class="mt-2 sm:mt-3 text-2xl sm:text-4xl font-extrabold uppercase tracking-[0.06em] sm:tracking-[0.08em] text-white md:text-5xl">Seçilmiş çalışmalar</h1>
 				</div>
-				<a href="#" class="hidden rounded-full border border-white/15 px-5 py-2 text-sm font-medium text-white transition hover:border-[#cc0000] hover:text-[#cc0000] md:inline-flex">Daha fazla</a>
+				<a href="#" class="hidden rounded-full border border-white/15 px-5 py-2 text-sm font-medium text-white transition hover:border-[#cc0000] hover:text-[#cc0000] md:inline-flex whitespace-nowrap">Daha fazla</a>
 			</div>
 
-			<div class="mt-10 grid gap-5 lg:grid-cols-3">
-				<article class="group rounded-[1.6rem] page-card p-6 transition duration-300 hover:border-[#cc0000]">
-					<p class="text-xs font-semibold uppercase tracking-[0.35em] text-[#cc0000]">İHA Sistemi</p>
-					<h2 class="mt-4 text-2xl font-bold text-white">Sensör & Termal Görüntü İşleme</h2>
-					<p class="mt-4 text-sm leading-7 text-soft">Sensör verileri ve termal görüntü işleme tabanlı akıllı İHA sistemi; hedef tespit ve telemetri entegrasyonu.</p>
+			<div class="mt-8 sm:mt-10 grid gap-4 sm:gap-5 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+				<article class="group rounded-[1.6rem] page-card p-4 sm:p-6 transition duration-300 hover:border-[#cc0000]">
+					<p class="text-xs font-semibold uppercase tracking-[0.3em] sm:tracking-[0.35em] text-[#cc0000]">İHA Sistemi</p>
+					<h2 class="mt-3 sm:mt-4 text-lg sm:text-2xl font-bold text-white">Sensör & Termal Görüntü İşleme</h2>
+					<p class="mt-3 sm:mt-4 text-xs sm:text-sm leading-6 sm:leading-7 text-soft">Sensör verileri ve termal görüntü işleme tabanlı akıllı İHA sistemi; hedef tespit ve telemetri entegrasyonu.</p>
 				</article>
 
-				<article class="group rounded-[1.6rem] page-card p-6 transition duration-300 hover:border-[#cc0000]">
-					<p class="text-xs font-semibold uppercase tracking-[0.35em] text-[#cc0000]">Wapief</p>
-					<h2 class="mt-4 text-2xl font-bold text-white">Gerçek Zamanlı Chat</h2>
-					<p class="mt-4 text-sm leading-7 text-soft">Şifreli, düşük gecikmeli iletişim altyapısı; ölçeklenebilir sunucu ve uçtan uca şifreleme.</p>
+				<article class="group rounded-[1.6rem] page-card p-4 sm:p-6 transition duration-300 hover:border-[#cc0000]">
+					<p class="text-xs font-semibold uppercase tracking-[0.3em] sm:tracking-[0.35em] text-[#cc0000]">Wapief</p>
+					<h2 class="mt-3 sm:mt-4 text-lg sm:text-2xl font-bold text-white">Gerçek Zamanlı Chat</h2>
+					<p class="mt-3 sm:mt-4 text-xs sm:text-sm leading-6 sm:leading-7 text-soft">Şifreli, düşük gecikmeli iletişim altyapısı; ölçeklenebilir sunucu ve uçtan uca şifreleme.</p>
 				</article>
 
-				<article class="group rounded-[1.6rem] page-card p-6 transition duration-300 hover:border-[#cc0000]">
-					<p class="text-xs font-semibold uppercase tracking-[0.35em] text-[#cc0000]">Elit Barbarlar</p>
-					<h2 class="mt-4 text-2xl font-bold text-white">Premium Topluluk Platformu</h2>
-					<p class="mt-4 text-sm leading-7 text-soft">Üyelik, içerik sınıflandırma ve premium etkileşim akışlarına sahip web tabanlı topluluk platformu.</p>
+				<article class="group rounded-[1.6rem] page-card p-4 sm:p-6 transition duration-300 hover:border-[#cc0000]">
+					<p class="text-xs font-semibold uppercase tracking-[0.3em] sm:tracking-[0.35em] text-[#cc0000]">Elit Barbarlar</p>
+					<h2 class="mt-3 sm:mt-4 text-lg sm:text-2xl font-bold text-white">Premium Topluluk Platformu</h2>
+					<p class="mt-3 sm:mt-4 text-xs sm:text-sm leading-6 sm:leading-7 text-soft">Üyelik, içerik sınıflandırma ve premium etkileşim akışlarına sahip web tabanlı topluluk platformu.</p>
 				</article>
 
-				<article class="group rounded-[1.6rem] page-card p-6 transition duration-300 hover:border-[#cc0000]">
-					<p class="text-xs font-semibold uppercase tracking-[0.35em] text-[#cc0000]">ThermalTrack AI</p>
-					<h2 class="mt-4 text-2xl font-bold text-white">Yapay Zekâ Hedef Tespiti</h2>
-					<p class="mt-4 text-sm leading-7 text-soft">Thermal görüntülerde hedef tespiti, sınıflandırma ve yönlendirme için derin öğrenme modelleri.</p>
+				<article class="group rounded-[1.6rem] page-card p-4 sm:p-6 transition duration-300 hover:border-[#cc0000]">
+					<p class="text-xs font-semibold uppercase tracking-[0.3em] sm:tracking-[0.35em] text-[#cc0000]">ThermalTrack AI</p>
+					<h2 class="mt-3 sm:mt-4 text-lg sm:text-2xl font-bold text-white">Yapay Zekâ Hedef Tespiti</h2>
+					<p class="mt-3 sm:mt-4 text-xs sm:text-sm leading-6 sm:leading-7 text-soft">Thermal görüntülerde hedef tespiti, sınıflandırma ve yönlendirme için derin öğrenme modelleri.</p>
 				</article>
 
-				<article class="group rounded-[1.6rem] page-card p-6 transition duration-300 hover:border-[#cc0000]">
-					<p class="text-xs font-semibold uppercase tracking-[0.35em] text-[#cc0000]">EchoSense</p>
-					<h2 class="mt-4 text-2xl font-bold text-white">Çoklu Mikrofon İşleme</h2>
-					<p class="mt-4 text-sm leading-7 text-soft">Çoklu mikrofon verisi işleme, gürültü azaltma ve konum analizi ile hassas ses tespiti.</p>
+				<article class="group rounded-[1.6rem] page-card p-4 sm:p-6 transition duration-300 hover:border-[#cc0000]">
+					<p class="text-xs font-semibold uppercase tracking-[0.3em] sm:tracking-[0.35em] text-[#cc0000]">EchoSense</p>
+					<h2 class="mt-3 sm:mt-4 text-lg sm:text-2xl font-bold text-white">Çoklu Mikrofon İşleme</h2>
+					<p class="mt-3 sm:mt-4 text-xs sm:text-sm leading-6 sm:leading-7 text-soft">Çoklu mikrofon verisi işleme, gürültü azaltma ve konum analizi ile hassas ses tespiti.</p>
 				</article>
 
-				<article class="group rounded-[1.6rem] page-card p-6 transition duration-300 hover:border-[#cc0000]">
-					<p class="text-xs font-semibold uppercase tracking-[0.35em] text-[#cc0000]">SkyRoute Control</p>
-					<h2 class="mt-4 text-2xl font-bold text-white">Otonom Yön Kontrolü</h2>
-					<p class="mt-4 text-sm leading-7 text-soft">Otonom yön kontrol algoritmaları, güvenilir telemetri ve verimli veri aktarım mekanizmaları.</p>
+				<article class="group rounded-[1.6rem] page-card p-4 sm:p-6 transition duration-300 hover:border-[#cc0000]">
+					<p class="text-xs font-semibold uppercase tracking-[0.3em] sm:tracking-[0.35em] text-[#cc0000]">SkyRoute Control</p>
+					<h2 class="mt-3 sm:mt-4 text-lg sm:text-2xl font-bold text-white">Otonom Yön Kontrolü</h2>
+					<p class="mt-3 sm:mt-4 text-xs sm:text-sm leading-6 sm:leading-7 text-soft">Otonom yön kontrol algoritmaları, güvenilir telemetri ve verimli veri aktarım mekanizmaları.</p>
 				</article>
 
-				<article class="group rounded-[1.6rem] page-card p-6 transition duration-300 hover:border-[#cc0000]">
-					<p class="text-xs font-semibold uppercase tracking-[0.35em] text-[#cc0000]">API-STAR</p>
-					<h2 class="mt-4 text-2xl font-bold text-white">Gerçek Zamanlı API Altyapısı</h2>
-					<p class="mt-4 text-sm leading-7 text-soft">API haberleşmesi ve gerçek zamanlı veri senkronizasyonu için güvenli ve ölçeklenebilir altyapı.</p>
+				<article class="group rounded-[1.6rem] page-card p-4 sm:p-6 transition duration-300 hover:border-[#cc0000]">
+					<p class="text-xs font-semibold uppercase tracking-[0.3em] sm:tracking-[0.35em] text-[#cc0000]">API-STAR</p>
+					<h2 class="mt-3 sm:mt-4 text-lg sm:text-2xl font-bold text-white">Gerçek Zamanlı API Altyapısı</h2>
+					<p class="mt-3 sm:mt-4 text-xs sm:text-sm leading-6 sm:leading-7 text-soft">API haberleşmesi ve gerçek zamanlı veri senkronizasyonu için güvenli ve ölçeklenebilir altyapı.</p>
 				</article>
 
-				<article class="group rounded-[1.6rem] page-card p-6 transition duration-300 hover:border-[#cc0000]">
-					<p class="text-xs font-semibold uppercase tracking-[0.35em] text-[#cc0000]">VizyonCore Mobile</p>
-					<h2 class="mt-4 text-2xl font-bold text-white">Mobil UX & Uygulama</h2>
-					<p class="mt-4 text-sm leading-7 text-soft">Kullanıcı deneyimi odaklı mobil uygulama geliştirme deneyimi; performans ve güvenlik öncelikli.</p>
+				<article class="group rounded-[1.6rem] page-card p-4 sm:p-6 transition duration-300 hover:border-[#cc0000]">
+					<p class="text-xs font-semibold uppercase tracking-[0.3em] sm:tracking-[0.35em] text-[#cc0000]">VizyonCore Mobile</p>
+					<h2 class="mt-3 sm:mt-4 text-lg sm:text-2xl font-bold text-white">Mobil UX & Uygulama</h2>
+					<p class="mt-3 sm:mt-4 text-xs sm:text-sm leading-6 sm:leading-7 text-soft">Kullanıcı deneyimi odaklı mobil uygulama geliştirme deneyimi; performans ve güvenlik öncelikli.</p>
 				</article>
 
-				<article class="group rounded-[1.6rem] page-card p-6 transition duration-300 hover:border-[#cc0000]">
-					<p class="text-xs font-semibold uppercase tracking-[0.35em] text-[#cc0000]">SecureLink Web</p>
-					<h2 class="mt-4 text-2xl font-bold text-white">Güvenlik Odaklı Web</h2>
-					<p class="mt-4 text-sm leading-7 text-soft">Güvenlik ve performans optimizasyonuna odaklı web sistemleri; sonuç odaklı mimari yaklaşımlar.</p>
+				<article class="group rounded-[1.6rem] page-card p-4 sm:p-6 transition duration-300 hover:border-[#cc0000]">
+					<p class="text-xs font-semibold uppercase tracking-[0.3em] sm:tracking-[0.35em] text-[#cc0000]">SecureLink Web</p>
+					<h2 class="mt-3 sm:mt-4 text-lg sm:text-2xl font-bold text-white">Güvenlik Odaklı Web</h2>
+					<p class="mt-3 sm:mt-4 text-xs sm:text-sm leading-6 sm:leading-7 text-soft">Güvenlik ve performans optimizasyonuna odaklı web sistemleri; sonuç odaklı mimari yaklaşımlar.</p>
 				</article>
 			</div>
 		</section>
 
-			<footer class="border-t border-white/10 py-8">
-			<div class="mx-auto flex max-w-7xl flex-col gap-3 px-6 text-sm text-soft lg:flex-row lg:items-center lg:justify-between lg:px-10">
+		<footer class="border-t border-white/10 py-6 sm:py-8">
+			<div class="mx-auto flex max-w-7xl flex-col gap-2 sm:gap-3 px-4 sm:px-6 text-xs sm:text-sm text-soft lg:flex-row lg:items-center lg:justify-between lg:px-10">
 				<p>ALPER OSMAN KILIK</p>
 				<p>© 2026 Alper Osman Kilik</p>
 			</div>
 		</footer>
 	</main>
+
+	<script src="script.js" defer></script>
 </body>
 </html>
