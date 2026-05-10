@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Türk bayrağı">
+  <rect width="1200" height="800" fill="#e30a17"/>
+  <circle cx="480" cy="400" r="220" fill="#ffffff"/>
+  <circle cx="540" cy="400" r="176" fill="#e30a17"/>
+  <path d="M 697 400 L 821 355 L 747 462 L 784 589 L 675 514 L 566 589 L 603 462 L 529 355 Z" fill="#ffffff"/>
+</svg>
